@@ -33,7 +33,7 @@ instructor:
    scholar_url: https://scholar.google.com/citations?user=Ir8H4wMAAAAJ&hl=en
    linked_in_url:
    office_hours_time: Flexible
-   office_hours_location:  Zoom or Office
+   office_hours_location:  Zoom
    office_hours_app_url: 'https://calendly.com/lecy/30min'
 -  name: Kirsten McGiver
    title: Instructor
