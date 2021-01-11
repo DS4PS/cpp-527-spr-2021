@@ -68,6 +68,11 @@ Introduction to the Course
 
 </p>
 
+<br>
+<br>
+<hr>
+<br>
+<br>
 
 
 ## Week 1 - Mon Jan 18th
