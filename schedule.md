@@ -91,7 +91,7 @@ The skills you learn this term can be used to build simulations in R, codify com
 
 The class is designed around labs each week due on Tuesdays, and practice problems that you can discuss with classmates on YellowDig. 
 
-![](https://raw.githubusercontent.com/DS4PS/cpp-527-fall-2020/master/assets/img/course-cadence.png)
+![](https://raw.githubusercontent.com/DS4PS/cpp-527-spr-2021/master/assets/img/course-cadence.png)
 
 Review sessions are scheduled Monday so that you have a chance to start your labs, work over the weekend, and come with questions. 
 
