@@ -89,13 +89,15 @@ The skills you learn this term can be used to build simulations in R, codify com
 
 ## Course Cadence 
 
-The class is designed around labs each week and practice problems that you will discuss with classmates on YellowDig. 
+The class is designed around labs each week due on Tuesdays, and practice problems that you can discuss with classmates on YellowDig. 
 
 ![](https://raw.githubusercontent.com/DS4PS/cpp-527-fall-2020/master/assets/img/course-cadence.png)
 
-I will schedule review sessions early in the week so that you have a chance to start the new lab and come with questions. 
+Review sessions are scheduled Monday so that you have a chance to start your labs, work over the weekend, and come with questions. 
 
-You can post to YellowDig and participate in discussions throughout the week. I would request that you refrain from posting solutions to each week's questions until Monday, though, so that everyone has a chance to share solutions. You can discuss the problems throughout the week. 
+Each week 2-3 R programming practice problems will be posted. These problems will focus on common errors people make with R, or useful tricks that are good to know. 
+
+You are encouraged to try all of the practice problems, but pick one that you will explain to classmates on YellowDig. Post your solution on Friday (not before) so that everyone has a chance to share solutions. You can discuss the posted solutions throughout the week.  
 
 There are three additional projects you must complete throughout the term. They are small projects, but require more autonomy than labs. Keep an eye out for these deadlines. 
 
