@@ -26,7 +26,7 @@ instructor:
 -  name: Jesse Lecy
    title: Professor
    email: jdlecy@asu.edu   
-   office_location: 
+   office_location: 'https://asu.zoom.us/j/9762065873'
    website_url: http://www.lecy.info/
    github_url: 'https://github.com/lecy' 
    twitter_url: 
