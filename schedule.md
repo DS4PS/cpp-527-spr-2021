@@ -3,33 +3,33 @@ layout: default
 title: Schedule
 
 canvas: 
-  assignment_url: 'https://canvas.asu.edu/courses/67635/assignments'
+  assignment_url: 'https://canvas.asu.edu/courses/76019/assignments'
   
-yellowdig_url: 'https://canvas.asu.edu/courses/67635/assignments/1615962'
+yellowdig_url: 'https://canvas.asu.edu/courses/76019/assignments/1888997'
 
 yellowdig: 
-  post-01: 'Monday, Aug 24th'
-  post-02: 'Monday, Aug 31st' 
-  post-03: 'Monday, Sept 7th' 
-  post-04: 'Monday, Sept 14th' 
-  post-05: 'Monday, Sept 21st' 
-  post-06: 'Monday, Sept 28th' 
-  post-07: 'Monday, Oct 5th' 
+  post-01: 'Friday, January 15th'
+  post-02: 'Friday, January 22nd' 
+  post-03: 'Friday, January 29th' 
+  post-04: 'Friday, February 5th' 
+  post-05: 'Friday, February 12th' 
+  post-06: 'Friday, February 19th' 
+  post-07: 'Friday, February 26th' 
   
 
 labs:
-  lab-01:  'Saturday, August 29th' 
-  lab-02:  'Saturday, September 5th'
-  lab-03:  'Saturday, September 12th'
-  lab-04:  'Saturday, September 19th'
-  lab-05:  'Saturday, September 26th'
-  lab-06:  'Saturday, October 3rd'
+  lab-01:  'Tuesday, January 19th' 
+  lab-02:  'Tuesday, January 26th'
+  lab-03:  'Tuesday, February 2nd'
+  lab-04:  'Tuesday, February 9th'
+  lab-05:  'Tuesday, February 16th'
+  lab-06:  'Tuesday, February 23rd'
   
   
 projects: 
-  r-package:  'Saturday, September 19th'
-  report-template:  'Friday, October 9th'
-  code-through:  'Friday, October 9th'
+  r-package:  'Friday, January 29th'
+  report-template:  'Tuesday, March 2nd'
+  code-through:  'Friday, February 26th'
   
   
 ---
