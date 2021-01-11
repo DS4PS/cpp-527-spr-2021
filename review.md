@@ -20,14 +20,14 @@ Live review sessions will be held each week in order to:
 <br>
 
 
-> **Wednesdays**    
-> **4pm AZ time** 
+> **MONDAYS**    
+> **5pm AZ time** 
 
-<a href='https://asu.zoom.us/j/93504639301' target=""> <button class="zoom">JOIN ZOOM MEETING</button></a>
+<a href='https://asu.zoom.us/j/87540573400' target=""> <button class="zoom">JOIN ZOOM MEETING</button></a>
 
 <br>
 
-> **Add to your calendar:** <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=N2RmZWkwYzg3MWJ1YW5hYjdvZHBndTVwdDJfMjAyMDA4MjZUMjMwMDAwWiBqZGxlY3lAbQ&amp;tmsrc=jdlecy%40gmail.com&amp;scp=ALL"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+> **Add to your calendar:** <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=bTk0cWF2N2liZjJkbm4ybDlydmZsazR2ZjRfMjAyMTAxMTlUMDAwMDAwWiBqZGxlY3lAbQ&amp;tmsrc=jdlecy%40gmail.com&amp;scp=ALL"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
 
 
 <br> 
@@ -48,13 +48,13 @@ Feel free to schedule virtual office hours as well.
 
 
 
-## Week 1 - Wed Aug 26
+## Week 1 - Mon Jan 18th
   
 <p align="center">
-  <a href="https://asu.zoom.us/rec/share/1Z1FMbXCyXxLfYnCwUePVZUMEIToaaa813QX8vNbmUyHem5oOERd-dJXXY93Ahd8">
-  <img width="300" src="https://raw.githubusercontent.com/DS4PS/cpp-527-fall-2020/master/assets/img/play-video-icon2.png">
+  <a href="">
+  <img width="300" src="https://raw.githubusercontent.com/DS4PS/cpp-527-spr-2021/master/assets/img/play-video-icon2.png">
   <a>
-  <br> Passcode: <b>?wsk2Xx1</b>
+  <br> Passcode: <b></b>
     
   <br>
 
@@ -74,7 +74,39 @@ Feel free to schedule virtual office hours as well.
 <br>
 
 
-## Week 2 - Wed Sept 2
+
+
+</div>
+
+<br> 
+<br> 
+
+
+
+
+<style>
+.zoom {
+  background-color: #008CBA; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+</style>
+
+
+
+
+<!--
+
+
+
+
+## Week 2 - 
   
 <p align="center">
   <a href="https://asu.zoom.us/rec/play/-CY8RvMAX2o0b3QC8-3auhBWGtvew9ITG-ygr8sSMDu1fZttzcu498CS6272geMX0wmElJgYDtg20Srr.nvqAQY5_OmBqFsaN?continueMode=true">
@@ -491,35 +523,5 @@ results <- sapply( words, get_last_word )
 <br>
 
 
-
-
-
-<br>
-<br>
-<hr>
-<br>
-<br>
-
-
-</div>
-
-<br> 
-<br> 
-
-
-
-
-<style>
-.zoom {
-  background-color: #008CBA; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-}
-</style>
+-->
 
