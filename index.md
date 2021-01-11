@@ -14,19 +14,19 @@ info:
  course_number: CPP 527 
  course_level: Graduate 
  course_website: 'https://canvas.asu.edu/courses/41575'
- course_start_end_dates: Aug 20th to Oct 9th, 2020
+ course_start_end_dates: January 11th to March 2nd, 2020
  course_prerequisites:  
  class_meets_when:  Asynchronous  
- class_meets_where:  'https://asu.zoom.us/j/93504639301'
+ class_meets_where:  'https://asu.zoom.us/j/87540573400'
  review_sessions_when: TBD 
  review_sessions_where: Zoom
- discussion_board_url: 'https://ds4ps.org/cpp-527-fall-2020/help/'
+ discussion_board_url: 'https://ds4ps.org/cpp-527-spr-2021/help/'
 
 instructor:
 -  name: Jesse Lecy
    title: Professor
    email: jdlecy@asu.edu   
-   office_location: UCENT 517
+   office_location: 
    website_url: http://www.lecy.info/
    github_url: 'https://github.com/lecy' 
    twitter_url: 
@@ -34,8 +34,19 @@ instructor:
    linked_in_url:
    office_hours_time: Flexible
    office_hours_location:  Zoom or Office
-   office_hours_app_url: 'https://calendly.com/lecy/15min'
-   
+   office_hours_app_url: 'https://calendly.com/lecy/30min'
+-  name: Kirsten McGiver
+   title: Instructor
+   email: kc.mcgiver@yahoo.com   
+   office_location: 
+   website_url: 
+   github_url: 'https://github.com/kcmcgiver' 
+   twitter_url: 
+   scholar_url: 
+   linked_in_url: 'https://www.linkedin.com/in/kirsten-mcgiver-03460b110/'
+   office_hours_time: Flexible
+   office_hours_location:  Zoom 
+   office_hours_app_url: 'https://calendly.com/kc-mcgiver/office-hours?month=2021-01'   
 
 textbooks:
 - title: R Cookbook. Proven recipes
