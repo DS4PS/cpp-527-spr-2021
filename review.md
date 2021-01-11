@@ -48,6 +48,28 @@ Feel free to schedule virtual office hours as well.
 
 
 
+## Week 0 - Wed Jan 13th
+
+Introduction to the Course 
+
+<p align="center">
+  <a href="">
+  <img width="300" src="https://raw.githubusercontent.com/DS4PS/cpp-527-spr-2021/master/assets/img/play-video-icon2.png">
+  <a>
+  <br> Passcode: <b></b>
+    
+  <br>
+
+  <a class="uk-button uk-button-default" href="https://raw.githubusercontent.com/DS4PS/cpp-527-fall-2020/master/review-sessions/week-01-control-structures.R" target="_blank">SAMPLE CODE</a>
+
+  <br>
+
+  <a class="uk-button uk-button-default" href="" target="_blank">SESSION CODE</a>
+
+</p>
+
+
+
 ## Week 1 - Mon Jan 18th
   
 <p align="center">
@@ -62,7 +84,7 @@ Feel free to schedule virtual office hours as well.
 
   <br>
 
-  <a class="uk-button uk-button-default" href="https://raw.githubusercontent.com/DS4PS/cpp-527-fall-2020/master/review-sessions/week-01-control-structures.Rhistory" target="_blank">SESSION CODE</a>
+  <a class="uk-button uk-button-default" href="" target="_blank">SESSION CODE</a>
 
 </p>
 
