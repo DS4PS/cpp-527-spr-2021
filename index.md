@@ -13,7 +13,7 @@ info:
  course_title: Foundations of Data Science Part II
  course_number: CPP 527 
  course_level: Graduate 
- course_website: 'https://canvas.asu.edu/courses/41575'
+ course_website: 'https://canvas.asu.edu/courses/76019'
  course_start_end_dates: January 11th to March 2nd, 2020
  course_prerequisites:  
  class_meets_when:  Asynchronous  
