@@ -44,6 +44,7 @@ The five functions form the basic steps of the virtual game.
 For your homework, submit your knitted markdown file with the following:
 
 * Your five functions, each in its own code chunk.
+* Psuedo-code that explains the logic of each function. 
 * Below each include another chunk that tests the function using appropriate arguments and input data. 
 
 Note that you will need to think carefully about input arguments and return values for each function. Some function do not need arguments. 
@@ -67,6 +68,19 @@ Here is some code to get you started.
 
 ## STEP 1 - CREATE A NEW GAME
 
+
+This function sets up a new game.  
+
+**Psuedocode**
+
+```
+# step 1: create a vector of 3 doors: 2 goats and 1 car
+# step 2: randomize the position of the car for a new game
+# step 3: return the new game vector 
+
+# note that no external information is needed
+# so no arguments are passed to the vector 
+```
 ```{r}
 create_game <- function( )
 {
@@ -79,6 +93,8 @@ create_game <- function( )
 
 
 **Test of Function:**
+
+Note that when functions utilize randomization it is helpful to test functions multiple times to make sure randomization is working properly. In this case we are randomizing the position of the car in each new game. 
 
 ```{r}
 # try three times to see randomization 
@@ -97,7 +113,22 @@ create_game()
 
 ## STEP 2 - CONTESTANT SELECTS A DOOR 
 
-The contestant makes their first selection. Write a function to select one door at random.  
+
+
+The contestant makes their first selection. Write a function to select one door at random. 
+
+**Psuedocode** 
+
+```
+# step 1: create a vector of doors numbered 1,2,3
+# step 2: randomly select ONE of the doors 
+# step 3: return the selection 
+
+# since the contestant will not know the position 
+# of the car when they select a door we do not 
+# need to share information about the game set-up
+# before the selection is made 
+```
 
 ```{r}
 select_door <- function( )
