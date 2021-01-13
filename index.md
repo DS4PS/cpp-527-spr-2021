@@ -38,7 +38,7 @@ instructor:
 -  name: Kirsten McGiver
    title: Instructor
    email: Kirsten.McGiver@asu.edu   
-   office_location: 
+   office_location: 'https://asu.zoom.us/j/7726225850'
    website_url: 
    github_url: 'https://github.com/kcmcgiver' 
    twitter_url: 
