@@ -37,7 +37,7 @@ instructor:
    office_hours_app_url: 'https://calendly.com/lecy/30min'
 -  name: Kirsten McGiver
    title: Instructor
-   email: kc.mcgiver@yahoo.com   
+   email: Kirsten.McGiver@asu.edu   
    office_location: 
    website_url: 
    github_url: 'https://github.com/kcmcgiver' 
