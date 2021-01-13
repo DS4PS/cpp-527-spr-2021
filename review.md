@@ -41,6 +41,10 @@ For those that cannot attend recordings of each session will be posted below.
 
 Feel free to schedule virtual office hours as well.   
 
+* Kirsten McGiver: [AVAILABILITY](https://calendly.com/kc-mcgiver/office-hours?month=2021-01)
+* Jesse Lecy: [AVAILABILITY](https://calendly.com/lecy/30min)
+
+
 <br> 
 <hr>
 <br>
