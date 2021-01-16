@@ -7,17 +7,15 @@ root-url: 'https://raw.githubusercontent.com/DS4PS/cpp-527-fall-2020/master/revi
 
 session: 
 - week0:
-  date: 'Mon Jan 1888th'
+  date: 'WED Jan 13th'
   video: 'https://asu.zoom.us/rec/share/4zQ3sQd1c7yDHbNJH1mrZOeZsCMcaSnQ9aTt2_FfWXO06IqH-LbSc4bJLw1caCVb.TL8bqIGYOgghYtoE'
   password: 'mT&DO50G' 
-  sample-code: 'week-01-control-structures.R'
-  session-code: 'week-01-control-structures.R'
 - week1:
-  date:  'Mon Jan 18th' 
-  video: 'https://asu.zoom.us/rec/share/4zQ3sQd1c7yDHbNJH1mrZOeZsCMcaSnQ9aTt2_FfWXO06IqH-LbSc4bJLw1caCVb.TL8bqIGYOgghYtoE' 
-  password: 'mT&DO50G'  
+  date:  'MON Jan 18th' 
+  video: '' 
+  password: ''  
   sample-code: 'week-01-control-structures.R' 
-  session-code: 'week-01-control-structures.R' 
+  session-code: '' 
     
     
 ---
