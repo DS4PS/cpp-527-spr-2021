@@ -9,11 +9,10 @@ layout: default
 
 
 
-{% assign sessioncount = 1 %}
 
 {% for item in page.session %}
 
-<h2> Session {% increment sessioncount %} - {{ item.date }} </h2>
+<h2> Session {% increment sessioncount + 1 %} - {{ item.date }} </h2>
   
 <p align="center">
 
