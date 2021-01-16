@@ -2347,7 +2347,22 @@ The states are currently presented as dummy variables.
 
 To make the dataset tidy convert the four dummy variables into a single STATE factor. 
 
+```r
+dat
+   Y STATE 
+1 54    NY 
+2 27    NY 
+3 35    AL 
+4 19    AL 
+5 99    FL 
+6 84    FL 
+7 34    MN 
+8 29    MN 
+```
+
 This problem should be done programmatically. There are several ways to do this effectively. 
+
+Here is the original dataframe (copy and paste into R): 
 
 ```r
 # dput( dat )
