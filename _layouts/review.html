@@ -9,11 +9,11 @@ layout: default
 
 
 
-{% increment my_counter %}
+{% assign sessioncount = 0 %}
 
 {% for item in page.session %}
 
-## Session {% increment my_counter %} - {{ item.date }} 
+<h2> Session {% increment sessioncount %} - {{ item.date }} </h2>
   
 <p align="center">
 
@@ -24,6 +24,7 @@ layout: default
   <br> Passcode: <b> {{item.password}} </b>
   {% endif %}
   
+  <br>
   <br>
   
   {% if item.sample-code %}
@@ -48,6 +49,12 @@ layout: default
 {% endfor %}
 
 
+<br>
+<br>
+<br>
+<br>
+    
+    
 </div>
 
 
