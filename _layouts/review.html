@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+
+<div class = "uk-container uk-container-small">
+
+{{content}}
+
+
+
+
+
+{% for item in page.session %}
+
+## Unit {% increment my_counter %} - {{ item.dat }} 
+  
+<p align="center">
+
+  {% if item.video %}
+  <a href="{{ item.video }}">
+  <img width="300" src="https://raw.githubusercontent.com/DS4PS/cpp-527-spr-2021/master/assets/img/play-video-icon2.png">
+  <a>
+  <br> Passcode: <b> {{item.password}} </b>
+  {% endif %}
+  
+  <br>
+  
+  {% if item.sample-code %}
+  <a class="uk-button uk-button-default" href="{{ page.root-url }}{{ item.sample-code }}" target="_blank">SAMPLE CODE</a>
+  {% endif %}
+  
+  <br>
+
+  {% if item.session-code %}
+  <a class="uk-button uk-button-default" href="{{ page.root-url }}{{ item.session-code }}" target="_blank">SESSION CODE</a>
+  {% endif %}
+  
+</p>
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+{% endfor %}
+
+
+</div>
+
+
