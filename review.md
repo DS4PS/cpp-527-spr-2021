@@ -11,9 +11,7 @@ session:
   video: 'https://asu.zoom.us/rec/share/4zQ3sQd1c7yDHbNJH1mrZOeZsCMcaSnQ9aTt2_FfWXO06IqH-LbSc4bJLw1caCVb.TL8bqIGYOgghYtoE'
   password: 'mT&DO50G' 
 - week1:
-  date:  'MON Jan 18th' 
-  video: '' 
-  password: ''  
+  date:  'MON Jan 18th'  
   sample-code: 'week-01-control-structures.R' 
   session-code: '' 
     
