@@ -3019,6 +3019,8 @@ Add your codethrough files (the HTML specifically) to your new website on GitHub
 
 <a class="uk-button uk-button-default" href="https://ds4ps.org/cpp-527-spr-2020/labs/code-through-assignment.html">Code-Through Instructions</a>
 
+---
+
 **Submit to Canvas:**
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT CODE-THROUGH</a>
@@ -3026,6 +3028,33 @@ Add your codethrough files (the HTML specifically) to your new website on GitHub
 **Post on Yellowdig:**
 
 <a class="uk-button uk-button-primary" href="{{page.yellowdig_url}}">YELLOWDIG</a>
+
+---
+
+Optional code-through assignment: if you are looking for topics we invite you to select one of the placeholder chapters from the open-source course lecture notes. 
+
+For example, Converting Data Types: 
+
+https://ds4ps.org/dp4ss/#one-dimensional-datasets
+
+These notes are used as background reading for course units, but the main intent is to create a catalog of useful topics that can be referenced quickly to remind yourself about a topic. Syntax and arguments are difficult to memorize, so even experienced programmers need working examples as reference. 
+
+Cheat sheets and reference chapters do not need to include a lot of explanation, but rather a list of important considerations under a topic and useful examples that differentiate cases. 
+
+For example, in a chapter on factors you could include things like: 
+
+* creating factors (the factor function) 
+* printing unique factor levels 
+* counting factor levels 
+* creating new factor level labels  
+* changing factor level labels 
+* conversion to factors 
+* conversion from factors to characters
+* conversion from factors to numeric 
+* regular versus ordered factors 
+* default versus custom factor orders 
+
+Note that these are rules related to one single vector type! It can be helpful to choose what appears to be a narrow topic and test yourself on how much you know about that topic, as well as whether you can find some parsimonious examples to show the right and wrong ways to implement your code. Often times examples that show what NOT to do can be more instructive than correct code. 
 
 <br>
 <br>
