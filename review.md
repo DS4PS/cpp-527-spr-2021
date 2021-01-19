@@ -12,10 +12,11 @@ session:
   password: 'mT&DO50G' 
 - week1:
   date:  'MON Jan 18th'  
+  video: 'https://asu.zoom.us/rec/share/Br8CXNL3zGrOT3Q3Mh50a4yX4Ou8wYjLTt5OygN79Iff8WyxKbRIOVnF8QlCgWtT.WYOR5eNks9LQjcny'
+  password: '9sRV?4qE'
   sample-code: 'week-01-control-structures.R' 
-  session-code: '' 
-    
-    
+  session-code: 'week-01-control-structures.Rhistory' 
+      
 ---
 
 
