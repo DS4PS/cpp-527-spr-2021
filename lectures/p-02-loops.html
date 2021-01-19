@@ -5,7 +5,6 @@
     <meta charset="utf-8" />
     <meta name="author" content="" />
     <link href="p-02-loops_files/remark-css-0.0.1/robot.css" rel="stylesheet" />
-    <link href="p-02-loops_files/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="slides.css" type="text/css" />
   </head>
@@ -15,7 +14,7 @@ class: center, middle, inverse, title-slide
 
 # Building Simulations in R: <br>Mastering Loops
 ### <img src='https://ds4ps.github.io/cpp-524-spr-2020/assets/posts/experiment.png' alt='asu' height='150'>
-### <br> CPP 527 Foundations of Data Science II <br> <br> <i class="fas  fa-link "></i> <a href="https://ds4ps.org/ms-prog-eval-data-analytics/courses/">MS PEDA</a> <i class="fab  fa-github "></i> <a href="https://github.com/DS4PS/cpp-527-spr-2020/tree/master/lectures">Source Code</a>
+### <br> CPP 527 Foundations of Data Science II <br> <br> <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"> [ comment ] <path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path></svg> <a href="https://ds4ps.org/ms-prog-eval-data-analytics/courses/">MS PEDA</a> <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"> [ comment ] <path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path></svg> <a href="https://github.com/DS4PS/cpp-527-spr-2020/tree/master/lectures">Source Code</a>
 
 ---
 
@@ -180,6 +179,60 @@ Unlike humans, the computer does not get tired, so we can scale repetitive tasks
 
 
 
+---
+
+
+
+# Anatomy of a for() Loop
+
+.left-column[
+
+### No loop
+
+`\(2^1=2\)`
+
+`\(2^2=4\)`
+
+`\(2^3=8\)`
+
+`\(2^4=16\)`
+
+`\(2^5=32\)`
+
+&lt;br&gt;
+
+
+
+
+]
+
+
+.right-column[ 
+
+
+```r
+results &lt;- NULL
+results[1] &lt;- 2^1 
+results[2] &lt;- 2^2 
+results[3] &lt;- 2^3 
+results[4] &lt;- 2^4 
+results[5] &lt;- 2^5
+```
+
+
+```
+##   results
+## 1       2
+## 2       4
+## 3       8
+## 4      16
+## 5      32
+```
+
+
+]
+
+
 
 ---
 
@@ -200,16 +253,6 @@ name: for
 
 
 
-
-```
-##   results
-*## 1       2
-## 2       4
-## 3       8
-## 4      16
-## 5      32
-```
-
 ]
 
 
@@ -222,6 +265,17 @@ for( i in 1:5 )
 {
   results[i] &lt;- 2^i   
 }
+```
+
+
+
+```
+##   results
+*## 1       2
+## 2       4
+## 3       8
+## 4      16
+## 5      32
 ```
 
 ]
@@ -243,15 +297,6 @@ for( i in 1:5 )
 &lt;br&gt;
 
 
-```
-##   results
-## 1       2
-*## 2       4
-## 3       8
-## 4      16
-## 5      32
-```
-
 
 ]
 
@@ -265,6 +310,16 @@ for( i in 1:5 )
 {
   results[i] &lt;- 2^i   
 }
+```
+
+
+```
+##   results
+## 1       2
+*## 2       4
+## 3       8
+## 4      16
+## 5      32
 ```
 
 ]
@@ -291,15 +346,6 @@ for( i in 1:5 )
 &lt;br&gt;
 
 
-```
-##   results
-## 1       2
-## 2       4
-*## 3       8
-## 4      16
-## 5      32
-```
-
 
 
 ]
@@ -314,6 +360,16 @@ for( i in 1:5 )
 {
   results[i] &lt;- 2^i   
 }
+```
+
+
+```
+##   results
+## 1       2
+## 2       4
+*## 3       8
+## 4      16
+## 5      32
 ```
 
 ]
@@ -855,7 +911,7 @@ name: while
 
 .pull-left[
 
-![](p-02-loops_files/figure-html/unnamed-chunk-27-1.png)&lt;!-- --&gt;
+![](p-02-loops_files/figure-html/unnamed-chunk-30-1.png)&lt;!-- --&gt;
 
 ]
 
@@ -888,7 +944,7 @@ Start game with $10 in cash and see how long you last. At each step you flip a c
 
 .pull-left[
 
-![](p-02-loops_files/figure-html/unnamed-chunk-29-1.png)&lt;!-- --&gt;
+![](p-02-loops_files/figure-html/unnamed-chunk-32-1.png)&lt;!-- --&gt;
 
 ]
 
@@ -1143,7 +1199,7 @@ m$coefficients
 
 ```
 ## (Intercept)           x 
-##   0.3899329   1.8900777
+##   0.9185321   1.8907734
 ```
 
 ```r
@@ -1152,7 +1208,7 @@ m[[1]]
 
 ```
 ## (Intercept)           x 
-##   0.3899329   1.8900777
+##   0.9185321   1.8907734
 ```
 
 
@@ -1179,7 +1235,7 @@ head( m$residuals, 3 )
 
 ```
 ##          1          2          3 
-##  0.2606646 -0.1408707  0.2690176
+## -0.2895673 -0.4253232 -0.6080408
 ```
 
 ]
@@ -1201,9 +1257,9 @@ head( m$model, 3 )
 
 ```
 ##          y x
-## 1 2.540675 1
-## 2 4.029218 2
-## 3 6.329184 3
+## 1 2.519738 1
+## 2 4.274756 2
+## 3 5.982811 3
 ```
 
 ]
@@ -1221,14 +1277,14 @@ str( m )
 
 ```
 ## List of 12
-##  $ coefficients : Named num [1:2] 0.39 1.89
+##  $ coefficients : Named num [1:2] 0.919 1.891
 ##   ..- attr(*, "names")= chr [1:2] "(Intercept)" "x"
-##  $ residuals    : Named num [1:10] 0.261 -0.141 0.269 -0.228 0.164 ...
+##  $ residuals    : Named num [1:10] -0.2896 -0.4253 -0.608 0.0142 1.6451 ...
 ##   ..- attr(*, "names")= chr [1:10] "1" "2" "3" "4" ...
-##  $ effects      : Named num [1:10] -34.1063 17.1675 0.2315 -0.2832 0.0914 ...
+##  $ effects      : Named num [1:10] -35.79 17.1738 -0.4946 0.0967 1.6967 ...
 ##   ..- attr(*, "names")= chr [1:10] "(Intercept)" "x" "" "" ...
 ##  $ rank         : int 2
-##  $ fitted.values: Named num [1:10] 2.28 4.17 6.06 7.95 9.84 ...
+##  $ fitted.values: Named num [1:10] 2.81 4.7 6.59 8.48 10.37 ...
 ##   ..- attr(*, "names")= chr [1:10] "1" "2" "3" "4" ...
 ##  $ assign       : int [1:2] 0 1
 ##  $ qr           :List of 5
@@ -1260,7 +1316,7 @@ str( m )
 ##   .. ..- attr(*, "dataClasses")= Named chr [1:2] "numeric" "numeric"
 ##   .. .. ..- attr(*, "names")= chr [1:2] "y" "x"
 ##  $ model        :'data.frame':	10 obs. of  2 variables:
-##   ..$ y: num [1:10] 2.54 4.03 6.33 7.72 10 ...
+##   ..$ y: num [1:10] 2.52 4.27 5.98 8.5 12.02 ...
 ##   ..$ x: int [1:10] 1 2 3 4 5 6 7 8 9 10
 ##   ..- attr(*, "terms")=Classes 'terms', 'formula'  language y ~ x
 ##   .. .. ..- attr(*, "variables")= language list(y, x)
@@ -1352,7 +1408,7 @@ Embed your new game function inside of a loop for 10,000 iterations and collect 
 Report your results as a table or an informative chart and discuss the results. What is the best strategy?
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"></script>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "default",
 "highlightLines": true,
@@ -1398,6 +1454,32 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
 // adds .remark-code-has-line-highlighted class to <pre> parent elements
 // of code chunks containing highlighted lines with class .remark-code-line-highlighted
 (function(d) {
@@ -1415,17 +1497,6 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   }
   preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
 })(document);</script>
-
-<script>
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-</script>
 
 <script>
 slideshow._releaseMath = function(el) {
