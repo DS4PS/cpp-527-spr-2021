@@ -651,6 +651,10 @@ How can we drop empty levels from a factor?
 ```r
 f2 <- f[ f %in% c("MON","TUE","WED","THUR","FRI") ]
 table( f2 )
+
+#  f2
+#  FRI  MON  SAT  SUN THUR  TUE  WED 
+#   16   15    0    0   14   13   12
 ```
 
 
@@ -665,6 +669,16 @@ x <- c("TUE","WED","FRI","SUN")
 vec <- sample( x, 20, replace=TRUE )
 f3 <- factor( vec )
 table( f3 )
+
+# HAVE
+# f3
+# FRI SUN TUE WED 
+#   6   3   4   7
+
+# WANT
+# f3
+# MON  TUE  WED THUR  FRI  SAT  SUN 
+#   0    4    7    0    6    0    3
 ```
 
 
