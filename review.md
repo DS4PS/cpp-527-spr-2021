@@ -16,7 +16,13 @@ session:
   password: '9sRV?4qE'
   sample-code: 'week-01-control-structures.R' 
   session-code: 'week-01-control-structures.Rhistory' 
-      
+- week2:
+  date:  'MON Jan 25th'  
+  video: ''
+  password: ''
+  sample-code: 'week-02-loops.R' 
+  session-code: '' 
+  
 ---
 
 
