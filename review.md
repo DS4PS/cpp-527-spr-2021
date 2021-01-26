@@ -18,10 +18,10 @@ session:
   session-code: 'week-01-control-structures.Rhistory' 
 - week2:
   date:  'MON Jan 25th'  
-  video: ''
-  password: ''
+  video: 'https://asu.zoom.us/rec/play/Q9CyZUKZxak1VM9-XNR01FAWN5UmLqFMEkurQGatnWtWLZNKm4AhjtX9EtAcmrea_RU2o5LSmEONpM53.eELpVMPB9fTnomWn?autoplay=true'
+  password: 'Pdr50qk?'
   sample-code: 'week-02-loops.R' 
-  session-code: '' 
+  session-code: 'week-02-loops.Rhistory' 
   
 ---
 
