@@ -60,6 +60,44 @@ Submit Button - <a class="uk-button uk-button-primary" href="{{page.canvas.assig
 <br>
 
 
+## Due Dates 
+
+For easy reference, you have the following due dates this term: 
+
+
+
+**Labs:** 
+
+* {{page.labs.lab-01}} 
+* {{page.labs.lab-02}} 
+* {{page.labs.lab-03}} 
+* {{page.labs.lab-04}} 
+* {{page.labs.lab-05}} 
+* {{page.labs.lab-06}} 
+
+**Post Practice Problems on YellowDig:**
+ 
+* {{page.yellowdig.post-01}} 
+* {{page.yellowdig.post-02}} 
+* {{page.yellowdig.post-03}} 
+* {{page.yellowdig.post-04}} 
+* {{page.yellowdig.post-05}} 
+* {{page.yellowdig.post-06}} 
+* {{page.yellowdig.post-07}} 
+
+
+**Projects:**
+
+* R Package: {{page.projects.r-package}}
+* Code Through: {{page.projects.code-through}}  
+* Customized Report Template: {{page.projects.report-template}} 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 # Course Overview 
