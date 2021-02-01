@@ -1592,12 +1592,29 @@ Instructions
 
 The function **grep( pattern, string )** works as follows:
 
-> Search for the pattern in each of the strings in the character vector at the top, *strings*. 
+> Search for the **pattern** in each **string** in the character vector. 
 
-The search pattern in each case below represents a regular expression. 
+*Recall a string is a value that is comprised of some combinations of text, punctuation, numbers, and spaces. It can be a single letter, a single word, a jumble of letters like a password, a sentence, or a paragraph. Typically we refer to words as strings (look back at the baby name bracelet metaphor in the lecture notes). Computers don't understand language, so text to them is just a bunch of letters strung together in some particular order. When doing analysis with numbers we focus on size and proportions. When doing analysis with text we focus on sets and orders of letters. For example, when two letters are transposed it creates a new word or represents an error in spelling. The order of words in a sentence is what generates meaning. A lot of text analysis entails learning how to decompose sentences and paragraphs into words, cleaning and standardizing the words by removing punctuation and conjugation ("stemming"), and then tabulating occurances or looking for patterns. Mastering a few basic text analysis functions like string splits and pattern search move you quickly along the path to becoming an expert text analyst.* 
 
-What will the following cases return? 
+The search pattern in each case below represents a regular expression. The vector **strings** is a character vector that contains multiple strings.
 
+Note: GREP = _global regular expression print_. It is a regular expression convention, which is not specific to R. Most programming languages allow you to use regular expression syntax to search for patterns in data. 
+
+```r
+grep( pattern, x, ignore.case=FALSE, value=FALSE )
+```
+
+By default grep() returns the **position** of a match in the vector. Add **value=TRUE** to return the actual string. 
+
+**grepl()** stands for grep LOGICAL, and returns a vector of TRUE / FALSE indicating matches. Note that the lenth of the return vector will be the number of matches in **grep()** and it will be the same length as x when using **grepl()**. 
+
+Before running the code, review the regular expression operators and see if you can guess which values will match each search parameter below. 
+
+For a full list of operators review this basic [cheat sheet](https://github.com/DS4PS/cpp-527-spr-2020/raw/master/lectures/regular-expressions%20one-page-cheat-sheet.pdf) and [Regular Expressions as used in R](https://stat.ethz.ch/R-manual/R-devel/library/base/html/regex.html#:~:text=Two%20types%20of%20regular%20expressions,use%20a%20literal%20regular%20expression.):
+
+*The fundamental building blocks are the regular expressions that match a single character. Most characters, including all letters and digits, are regular expressions that match themselves. Any metacharacter with special meaning may be quoted by preceding it with a backslash. The metacharacters in extended regular expressions are . \ | ( ) [ { ^ $ * + ?, but note that whether these have a special meaning depends on the context.*
+
+How many can your guess correctly before you run the code? 
 
 ```r
 
