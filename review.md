@@ -23,7 +23,7 @@ session:
   sample-code: 'week-02-loops.R' 
   session-code: 'week-02-loops.Rhistory' 
 - week3:
-  date:  'MON Jan 25th'  
+  date:  'MON Feb 1st'  
   video: ''
   password: ''
   sample-code: 'week-03-regular-expressions.R' 
