@@ -1630,7 +1630,27 @@ grep( pattern="^.ough", strings, value = TRUE)
 
 grep( pattern="ough.", strings, value = TRUE)
 
-grep( pattern="[^r]ough", strings, value = TRUE)
+# note the difference between ordered text and sets of text
+
+grep( pattern="ough", strings, value = TRUE)  # letter order matters
+
+grep( pattern="[ough]", strings, value = TRUE) # unordered set
+
+# sets operators are inclusive:  o OR u OR g OR h 
+
+grep( pattern="[ough]", strings, value = TRUE) # compare results to
+
+grep( pattern="[tough]", strings, value = TRUE) # doesn't have to include t
+
+# ^ operator changes meaning inside of sets
+
+grep( pattern="^rough", strings, value = TRUE) # anchor
+
+grep( pattern="[^r]ough", strings, value = TRUE) # absence of
+
+grep( pattern="[^ou]", strings, value = TRUE) # exclude both
+
+grep( pattern="[^uo]", strings, value = TRUE) # does order matter in sets? 
 
 # these are not as useful
 
