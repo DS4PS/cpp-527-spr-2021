@@ -24,10 +24,9 @@ session:
   session-code: 'week-02-loops.Rhistory' 
 - week3:
   date:  'MON Feb 1st'  
-  video: ''
-  password: ''
-  sample-code: 'week-03-regular-expressions.R' 
-  session-code: ''   
+  video: 'https://asu.zoom.us/rec/share/E8_HGNyoIpIKyoDJr44JKyZTzHICg-N-bq5isfOzxLafDTHzjWpKh3Aak8hYYdrZ.HooapZ31bjZtxV2m'
+  password: '0HE2A^9a'
+  sample-code: 'week-03-regular-expressions.R'  
   
   
 ---
