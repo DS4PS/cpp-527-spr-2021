@@ -235,9 +235,11 @@ We often need to search large bodies of text for patterns.
 
 Regular expressions are a stylized syntax that are used to query bodies of text to return very specific results. It uses symbols that help match groups of characters, as well as expressions to query locations within strings (a pattern at the beginning of a word or end of a sentence).
 
-*Note that this section borrows heavily from Gloria Li and Jenny Bryan.* Thank you for the clear examples provided at:
+*Note that this section borrows heavily from Gloria Li and Jenny Bryan ( [original link, but now defunct](https://stat545-ubc.github.io/block022_regular-expression.html) ).* 
 
-https://stat545-ubc.github.io/block022_regular-expression.html
+Some more clear examples provided by Dean Attali at:
+
+https://github.com/daattali/UBC-STAT545/blob/master/reference/regex/regularExpressions.md
 
 
 
