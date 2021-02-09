@@ -26,8 +26,13 @@ session:
   date:  'MON Feb 1st'  
   video: 'https://asu.zoom.us/rec/share/E8_HGNyoIpIKyoDJr44JKyZTzHICg-N-bq5isfOzxLafDTHzjWpKh3Aak8hYYdrZ.HooapZ31bjZtxV2m'
   password: '0HE2A^9a'
-  sample-code: 'week-03-regular-expressions.R'  
-  
+  sample-code: 'week-03-regular-expressions.R' 
+- week4:
+  date:  'MON Feb 8th'  
+  video: 'https://asu.zoom.us/rec/share/DWh2hctRpj0OZ2wRtOEgfWNXXW-qvuVV00FKetPssVr3efZQENfpKWidkLdJwo0b.w9I_6lH4zs0UZUgc'
+  password: 'cJJK8?At'
+  sample-code: 'week-03-regular-expressions.R'
+  session-code: 'week-03-regular-expressions.Rhistory'
   
 ---
 
