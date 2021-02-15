@@ -2207,7 +2207,7 @@ When these steps are done, submit a link to (1) your live site and (2) your GitH
 
 And share your page link on YellowDig: 
 
-<a class="uk-button uk-button-primary" href="{{page.canvas.yellowdig_url}}">YELLOWDIG</a>
+<a class="uk-button uk-button-primary" href="{{page.yellowdig_url}}">YELLOWDIG</a>
 
 <br>
 <br>
