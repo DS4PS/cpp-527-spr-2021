@@ -33,7 +33,11 @@ session:
   password: 'cJJK8?At'
   sample-code: 'week-03-regular-expressions.R'
   session-code: 'week-03-regular-expressions.Rhistory'
-  
+- week5:
+  date:  'MON Feb 15th'  
+  video: 'https://asu.zoom.us/rec/share/0hKwdV5lCGgSx7qltv-HaeEX5suF9Au8NC9SO3VfvjQNdZdFqX11jcPLD_EC-FPu.gXhP-A1scIAeDVsB'
+  password: '^Z.Z1C98'
+
 ---
 
 
