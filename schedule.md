@@ -2552,6 +2552,58 @@ Regular format:
 
 [Data journalists describe the value of APIs.](https://medium.com/trendct-data/a-gentle-guide-to-apis-for-data-journalists-2a6b0e6fcc1a)
 
+_**What is an API?**_
+
+*An application programming interface, or API, is a way for two programs to communicate. An API might provide a way to change the color of a light bulb or post on Twitter. In the case of data APIs, they offer a way to get some small slice of some large data set that lives on a server.*
+
+*APIs let you use other people’s databases and coding wizardry to enhance your own applications or analysis scripts. For instance you might have a spreadsheet with street addresses you need to turn into GPS coordinates so you can map them.*
+
+_**Examples Airport Status API**_
+
+*The FAA has an API that provides information about airports, including delays and weather. You give it an airport code, like “JFK” or “BDL” for Bradley International Airport, and it tells you what’s up at that airport.*
+
+*To get data for an airport, you just go to this specially formed web address; it even works in a browser (go ahead, try it):*
+
+```
+http://services.faa.gov/airport/status/JFK?format=application/json
+```
+
+*The “JFK” part can be replaced with any valid airport code, and the “format” can be set to “application/xml”, but I’m not interested in XML, so the only “variable” part of this is the airport code.*
+
+*The “JFK” part can be replaced with any valid airport code, and the “format” can be set to “application/xml”, but I’m not interested in XML, so the only “variable” part of this is the airport status web address.*
+
+*The response looks like this, a JSON string:*
+
+```
+{ "delay":"true",
+  "IATA":"JFK",
+  "state":"New York",
+  "name":"John F Kennedy International",
+  "weather":{ "visibility":10.00,
+              "weather":"Mostly Cloudy",
+              "meta":{"credit":"NOAA's National Weather Service","updated":"9:51 AM Local","url":"http://weather.gov/"},
+              "temp":"42.0 F (5.6 C)",
+              "wind":"Northwest at 16.1mph" },
+  "ICAO":"KJFK",
+  "city":"New York",
+  "status":{ "reason":"WX:Wind",
+             "closureBegin":"",
+             "endTime":"",
+             "minDelay":"31 minutes",
+             "avgDelay":"",
+             "maxDelay":"45 minutes",
+             "closureEnd":"",
+             "trend":"Increasing","type":"Departure" }
+}
+```
+
+> Side note, what would this data look like as a tidy dataframe? 
+
+<br>
+<hr>
+<br>
+
+
 **Example APIs:**
 
 There is one API that you likely use every single day: Google. Your query takes the form of the search words you type into the box, and the data is sent back as a nicely-formatted list of websites: the page title, URL, and the first few sentences of text on the page. 
