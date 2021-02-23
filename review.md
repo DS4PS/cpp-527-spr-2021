@@ -39,10 +39,9 @@ session:
   password: '^Z.Z1C98'
 - week6:
   date:  'MON Feb 22nd'  
-  video: ''
-  password: ''
+  video: 'https://asu.zoom.us/rec/share/4O-U70zF1-um0Ba9F_cfqEEPYygbVFAhn2yEJky4dXV6rKGoJiUHQrtgHCkKq_s4.I3qbnU7Welh36TCV'
+  password: '+6#.Fik0'
   sample-code: 'week-06-data-apis.R'
-  session-code: ''
 
 ---
 
