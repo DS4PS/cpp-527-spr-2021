@@ -2283,6 +2283,7 @@ To learn more, read pages 1-8 of the article that introduced this concept focusi
 
 [Tidy Data by Hadley Wickham](https://vita.had.co.nz/papers/tidy-data.pdf)
 
+The concept is also explained in simple language with examples in in the article [Data Organization in Spreadsheets](https://github.com/DS4PS/cpp-527-spr-2021/raw/main/articles/data-organization-in-spreadsheets.pdf). 
 
 ----
 
