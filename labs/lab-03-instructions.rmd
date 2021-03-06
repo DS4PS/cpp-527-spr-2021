@@ -56,7 +56,10 @@ The article title text is fairly clean and needs little pre-processing, but ther
 There are special spaces that appear randomly in some titles. They will appear identical to the invisible eye but will cause problems when you are trying to split titles into words. Replace them with regular spaces: 
 
 ```{r}
-d$title <- gsub( " ", " ", d$title )
+# replace all versions of space 
+# including special styles like
+# the 'hair space'  with regular spaces
+d$title <- gsub( "\\s", " ", d$title )
 ```
 
 
@@ -365,7 +368,7 @@ Does the length of the title matter?
 
 **Q3-A: Do titles with more words get better clap scores?** 
 
-Count the number of unique words in each title. 
+Count the number of words in each title. 
 
 Then examine the clap score as a function of word count by regressing the clap score onto word count. 
 

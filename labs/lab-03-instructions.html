@@ -287,7 +287,7 @@ summary {
 <li><strong>date</strong> - date of publication in style YYYY-MM-DD</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># URL &lt;- &quot;https://www.dropbox.com/s/tizgdsat2mziod6/medium-data-utf8.csv?dl=1&quot;</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a>URL &lt;-<span class="st"> &quot;https://raw.githubusercontent.com/DS4PS/cpp-527-fall-2020/master/labs/data/medium-data-utf8.csv&quot;</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>URL &lt;-<span class="st"> &quot;https://raw.githubusercontent.com/DS4PS/cpp-527-fall-2020/master/labs/data/medium-data-utf8-v2.csv&quot;</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a>d &lt;-<span class="st"> </span><span class="kw">read.csv</span>( URL )</span>
 <span id="cb1-4"><a href="#cb1-4"></a></span>
 <span id="cb1-5"><a href="#cb1-5"></a>preview.these &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;title&quot;</span>, <span class="st">&quot;subtitle&quot;</span>, <span class="st">&quot;claps&quot;</span>, <span class="st">&quot;reading_time&quot;</span>, <span class="st">&quot;publication&quot;</span>, <span class="st">&quot;date&quot;</span>)</span>
@@ -310,7 +310,7 @@ summary {
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center">A Beginner’s Guide to Word Embedding with Gensim Word2Vec Model</td>
+<td align="center">A Beginnerâ€™s Guide to Word Embedding with Gensim Word2VecÂ Model</td>
 <td align="center"></td>
 <td align="center">850</td>
 <td align="center">8</td>
@@ -322,20 +322,20 @@ summary {
 <td align="center">9</td>
 </tr>
 <tr class="odd">
-<td align="center">How to Use ggplot2 inÂ Python</td>
-<td align="center">A Grammar of Graphics for Python</td>
+<td align="center">How to Use ggplot2 inÃ‚Â Python</td>
+<td align="center">A Grammar of Graphics forÂ Python</td>
 <td align="center">767</td>
 <td align="center">5</td>
 </tr>
 <tr class="even">
-<td align="center">Databricks: How to Save Files in CSV on Your Local Computer</td>
-<td align="center">When I work on Python projects dealing…</td>
+<td align="center">Databricks: How to Save Files in CSV on Your LocalÂ Computer</td>
+<td align="center">When I work on Python projectsÂ dealingâ€¦</td>
 <td align="center">354</td>
 <td align="center">4</td>
 </tr>
 <tr class="odd">
 <td align="center">A Step-by-Step Implementation of Gradient Descent and Backpropagation</td>
-<td align="center">One example of building neural…</td>
+<td align="center">One example of buildingÂ neuralâ€¦</td>
 <td align="center">211</td>
 <td align="center">4</td>
 </tr>
@@ -347,10 +347,10 @@ summary {
 </tr>
 </tbody>
 </table>
-<table style="width:50%;">
+<table style="width:49%;">
 <colgroup>
 <col width="31%" />
-<col width="18%" />
+<col width="16%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -361,27 +361,27 @@ summary {
 <tbody>
 <tr class="odd">
 <td align="center">Towards Data Science</td>
-<td align="center">2019-05-30</td>
+<td align="center">5/30/2019</td>
 </tr>
 <tr class="even">
 <td align="center">Towards Data Science</td>
-<td align="center">2019-05-30</td>
+<td align="center">5/30/2019</td>
 </tr>
 <tr class="odd">
 <td align="center">Towards Data Science</td>
-<td align="center">2019-05-30</td>
+<td align="center">5/30/2019</td>
 </tr>
 <tr class="even">
 <td align="center">Towards Data Science</td>
-<td align="center">2019-05-30</td>
+<td align="center">5/30/2019</td>
 </tr>
 <tr class="odd">
 <td align="center">Towards Data Science</td>
-<td align="center">2019-05-30</td>
+<td align="center">5/30/2019</td>
 </tr>
 <tr class="even">
 <td align="center">Towards Data Science</td>
-<td align="center">2019-05-30</td>
+<td align="center">5/30/2019</td>
 </tr>
 </tbody>
 </table>
@@ -394,7 +394,10 @@ summary {
 <li>Remove “hair space” dash marks</li>
 </ol>
 <p>There are special spaces that appear randomly in some titles. They will appear identical to the invisible eye but will cause problems when you are trying to split titles into words. Replace them with regular spaces:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>d<span class="op">$</span>title &lt;-<span class="st"> </span><span class="kw">gsub</span>( <span class="st">&quot; &quot;</span>, <span class="st">&quot; &quot;</span>, d<span class="op">$</span>title )</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># replace all versions of space </span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="co"># including special styles like</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="co"># the &#39;hair space&#39;  with regular spaces</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>d<span class="op">$</span>title &lt;-<span class="st"> </span><span class="kw">gsub</span>( <span class="st">&quot;</span><span class="ch">\\</span><span class="st">s&quot;</span>, <span class="st">&quot; &quot;</span>, d<span class="op">$</span>title )</span></code></pre></div>
 <p>Some titles include HTML tags for emphasis. They will always occur at the start and end of the titles:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="st">&quot;&lt;strong class=</span><span class="ch">\&quot;</span><span class="st">markup--strong markup--h3-strong</span><span class="ch">\&quot;</span><span class="st">&gt;Why 70% of Entrepreneurs Are Ending Their Pitches the Wrong Way&lt;/strong&gt;&quot;</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a><span class="st">&quot;&lt;strong class=</span><span class="ch">\&quot;</span><span class="st">markup--strong markup--h3-strong</span><span class="ch">\&quot;</span><span class="st">&gt;Tackle Negative Core Beliefs&lt;/strong&gt;&quot;</span></span></code></pre></div>
@@ -813,7 +816,7 @@ summary {
 <h2>Q3 - Length of Title</h2>
 <p>Does the length of the title matter?</p>
 <p><strong>Q3-A: Do titles with more words get better clap scores?</strong></p>
-<p>Count the number of unique words in each title.</p>
+<p>Count the number of words in each title.</p>
 <p>Then examine the clap score as a function of word count by regressing the clap score onto word count.</p>
 <p>Visualize the relationship using a box and whisker plot:</p>
 <div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="co"># creating random non-meaningful data for demo</span></span>
