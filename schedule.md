@@ -1799,6 +1799,9 @@ Focus on:
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
+
+*To see an example of tools used in this lab in practice, see Urban Institute machine learning approaches used to identify nonprofits serving Black communities: [Addressing Racial Funding Gaps in the Nonprofit Sector Requires New Data Approaches](https://www.urban.org/urban-wire/addressing-racial-funding-gaps-nonprofit-sector-requires-new-data-approaches).*
+
 <br>
 <br>
 
