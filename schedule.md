@@ -1842,6 +1842,8 @@ For the discussion topic this week, I would like you to argue either:
 
 Pick a side and make your case! 
 
+*For a more nuanced treatment of the case see Gary King's new paper: [A Theory of Statistical Inference for Ensuring the Robustness of Scientific Results](https://gking.harvard.edu/hacking).*
+
 <br>
 <hr>
 
