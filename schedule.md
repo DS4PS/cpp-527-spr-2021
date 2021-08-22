@@ -1799,6 +1799,9 @@ Focus on:
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
+
+*To see an example of tools used in this lab in practice, see Urban Institute machine learning approaches used to identify nonprofits serving Black communities: [Addressing Racial Funding Gaps in the Nonprofit Sector Requires New Data Approaches](https://www.urban.org/urban-wire/addressing-racial-funding-gaps-nonprofit-sector-requires-new-data-approaches).*
+
 <br>
 <br>
 
@@ -1841,6 +1844,8 @@ For the discussion topic this week, I would like you to argue either:
 (2) that the problems with reproducibility are so engrained in the limits of science and in the DNA of academic institutions that there will always be problems with reproducility, and attempts to address it are insufficient in their ability to get to the root of the problem, or naive about human nature.
 
 Pick a side and make your case! 
+
+*For a more nuanced treatment of the case see Gary King's new paper: [A Theory of Statistical Inference for Ensuring the Robustness of Scientific Results](https://gking.harvard.edu/hacking).*
 
 <br>
 <hr>
